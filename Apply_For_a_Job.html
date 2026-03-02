@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Job Application</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="exercising.js"></script>
+ </head>
+ <body>
+  <a href="Shorefront_Gym_Jobs.html">Back to List of Jobs</a>
+  <h1>Job Application</h1>
+  <form onsubmit="return(ValidateJob(this, job))" action="Success.html" method="get">
+   Job:<select name="job" id="getJob">
+        <option value="none">None</option>
+        <optgroup label="Coach">
+         <option value="volleyball">Volleyball</option>
+         <option value="basketball">Basketball</option>
+         <option value="soccer">Soccer</option>
+         <option value="exercise">Exercise</option>
+        </optgroup>
+        <option value="sweeper">Sweeper</option>
+        <option value="equipment">Equipment Handler</option>
+       </select> 
+   <section class="border">
+    <h3 >Basic Information</h3>
+    First Name:<input type="text" name="FirstName"><br/>
+     Last Name:<input type="text" name="LastName"><br/>
+E-mail Address:<input type="text" name="EmailAddress"><br/>
+Phone Number(optional):<input type="text" name="YourPhoneNumber"><br/> 
+           Age:<input type="text" name="Age"><br/>
+   </section>
+   <section class="border">
+    <h3>Home Address</h3>
+     Address:<input type="text" name="Address"><br/>
+     Zip Code:<input type="text" name="ZipCode"><br/>
+     City:<input type="text" name="City"><br/>
+     State:<input type="text" name="State"><br/>
+     Country:<input type="text" name="Country"><br/>
+   </section>
+   <section class="border">
+    <h3>Education</h3>
+    School Name:<input type="text" name="School"><br/>
+    School Type (ex: high school):<input type="text" name="SchoolType"><br/>
+    School Phone Number:<input type="text" name="SchoolPhoneNumber"><br/>
+  </section>
+  <section class="border">
+   <h3>Previous Job Experience</h3>
+   Company Name:<input type="text" name="Company"><br/>
+   Job Title:<input type="text" name="Title"><br/>
+   Address:<input type="text" name="CompanyAddress"><br/>
+   Phone Number:<input type="text" name="CompanyPhoneNumber"><br/>
+   Start Date:<input type="text" name="startDate"><br/>
+   End Date:<input type="text" name="endDate"><br/>
+   Responsibilities:<br/>
+   <textarea name="tasks" rows="5" cols="30"></textarea>
+  </section>
+  <input type="submit" value="Submit Application">
+
+ </form>
+ </body>
+</html>

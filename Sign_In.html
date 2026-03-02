@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Sign In</title>
+  <script src="accounts.js"></script>
+  <link href="styles.css" type="text/css" rel="stylesheet">
+  
+ </head>
+ <body id="pinkBackground">
+ <?php
+    echo hello
+  ?>
+  <!--Links to the other main pages of the website-->
+  <nav>
+   <a href="index.html">Home</a>
+   <a href="Create_Account.html">Create Account</a>
+   <a href="Shorefront_Gym_Jobs.html">Jobs</a>
+  </nav>
+  <form name="signIn" onsubmit="return(SignIn(this))" action="Shorefront_Gym_Account.html" method="get">
+     <p id="section">Sign In</p><!--p tag is used so id can be in effect--><br/>
+     Username: <input type="text" name="UserName"><br/>
+     Password: <input type="password" name="PassWord"><br/>
+     <input type="submit" value="Sign In"><br/>
+     <a href="Forgot_Password.html">Forgot Password</a>
+	 <a href="Forgot_Username.html">Forgot Username</a>
+  </form>
+ <right>
+  <img src="Images/sign in.png" alt="Sign In Chart" id="tall"></img>
+ </right>
+ </body>
+</html>

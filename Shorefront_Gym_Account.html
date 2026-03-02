@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="exercising.js"></script>
+    <script src="accounts.js"></script>
+	<script src="classes.js"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Shorefront Y Gym Account</title>
+    
+  </head>
+  <body id="lightBlueBackground" onload="GetCurrentClasses()">
+    <nav id="up">
+     <a href="index.html">Home</a>
+     <a href="Create_Account.html">Create Account</a>
+     <a href="Shorefront_Gym_Jobs.html">Jobs</a>
+    </nav>
+    <form onsubmit="SignOut()" action="Sign_In.html">
+        <button>Sign Out</button>
+    </form>
+     <br/>
+    <form name="userAccount">
+      <h3 class="center">Day to Choose From</h3><br/>
+   <!--Here are the radio buttons that are used to select a day for the gym-->
+   <div>
+    Monday: <input type="radio" checked name="days">
+    Tuesday: <input type="radio" name="days">
+    Wednesday: <input type="radio" name="days">
+    Thursday: <input type="radio" name="days">
+    Friday: <input type="radio" name="days">
+    Saturday: <input type="radio" name="days">
+   </div>
+   <h3 class="center">Times to Choose From</h3><br/>
+   <!--Here are the radio buttons that are used to select a class for the gym-->
+   <div>
+    9AM-10AM: <input type="checkbox" name="hours">
+    10AM-11AM: <input type="checkbox" name="hours">
+    11AM-12PM: <input type="checkbox" name="hours">
+    12PM-1PM: <input type="checkbox" name="hours">
+    1PM-2PM: <input type="checkbox" name="hours">
+    2PM-3PM: <input type="checkbox" name="hours">
+    3PM-4PM: <input type="checkbox" name="hours">
+    4PM-5PM: <input type="checkbox" name="hours">
+   </div>
+  <!--Select menu used to select a payment type-->
+  <div>
+
+   Class Type:
+   <select name="classType" id="classTypes">
+     <option value="Soccer">Soccer</option>
+	 <option value="Basketball">Basketball</option>
+	 <option value="Volleyball">Volleyball</option>
+	 <option value="Exercise">Exercise</option>
+   </select>
+   Payment Type: 
+   <select name="paymentType" id="paymentType">
+    <option value="perClass">Per Class</option>
+    <option value="perWeek">Per Week</option>
+    <option value="perMonth">Per Month</option>
+    <option value="perYear">Per Year</option>
+   </select>
+ </div>
+ <div id="debt">
+    
+ </div>
+ <div>
+  <button type="button" onclick="AddClass()">Add Classes</button>
+  <button type="button" onclick="ShowFee(userAccount, days, hours, paymentType)">Show Fee</button>
+  <button type="button" id="allowPayment" onclick="AllowPayment()">Pay</button>
+ </div>
+ </form>
+</body>
+<footer>
+   <img src="Images/sports.jpg" alt="Sports" id="long"></img>
+</footer>
+</html>

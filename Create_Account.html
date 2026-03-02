@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Create Account</title>
+   <script src="accounts.js">
+</script>
+   <link href="styles.css" rel="stylesheet" type="text/css">
+ </head>
+ <body id="pinkBackground">
+    <nav>
+     <a href="index.html">Home</a>
+     <a href="Create_Account.html">Create Account</a>
+     <a href="Shorefront_Gym_Jobs.html">Jobs</a>
+    </nav>
+    <br/>
+   <form onsubmit="return(Validate())" action="Account_Success.html" method="post">
+   <!--This part is where you can create your account-->
+    <h1>Create Account</h1>
+    First Name:<input type="text" id="FirstName"><br/>
+    Last Name:<input type="text" id="LastName"><br/>
+    E-mail Address:<input type="text" id="emailAddress"><br/>
+    Username:<input type="text" id="Username"><br/>
+    Password:<input type="password" id="Password"><br/>
+    Confirm Password:<input type="password" id="ConfirmedPassword"><br/>
+    Security Question 1:<input type="text" id="SecurityQuestion1"><br/>
+    Security Answer 1:<input type="text" id="SecurityAnswer1"><br/>
+    Security Question 2:<input type="text" id="SecurityQuestion2"><br/>
+    Security Answer 2:<input type="text" id="SecurityAnswer2"><br/>
+   <input type="submit" value="Create Account">
+   <input type="reset" value="Reset Form">
+  </form> <br/>
+  <a href="Sign_In.html">Sign In Page</a>
+  <right>
+   <img src="Images/find account.png" alt="Create Account Chart" id="tall"></img>
+  </right>
+ </body>
+</html>                                              

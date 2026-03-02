@@ -1,0 +1,135 @@
+/*Lawrence Rosin*/
+.center/*Will be used on most content*/
+{
+  position:relative;
+  right:-500px;
+}
+.centerText{
+	text-align:center;
+}
+#title
+{
+  position:relative;
+  right:-350px;
+  text-decoration:underline;
+}
+a
+{
+  background-color:orange;
+  color:yellow;
+  font-size:20px;
+}
+/*Undos the center class's action*/
+nav
+{
+position:relative;
+right:-850px;
+}
+.invisible{
+	display:none;
+}
+/*Indents every paragraph*/
+p{text-indent: 70px;}
+#blueBackground{background-color:blue;}
+#lightBlueBackground{background-color:lightblue;}
+#pinkBackground{background-color:pink;}
+#redBackground{background-color:red;}
+#greenBackground{background-color:green;}
+#yellowBackground{
+	background-color:yellow;
+}
+#orangeBackground{
+	background-color:orange;
+}
+/*This id will affect a class*/
+#yellow{color:yellow;}
+a:hover{background-color:white;}
+.bigger{font-size:20px;}
+#tableTitle{
+	position:relative;
+	right:-200px;
+}
+//Is used on text to move it right, but only by a little bit
+.textRight
+{
+  position:relative;
+  right:-20px;
+}
+#underline{text-decoration:underline;}
+table,tr, td
+{ 
+  border:3px solid black;
+  width:50%;
+  height: 5%;
+}
+
+.image
+{
+  width:200px;
+  height:200px;
+  /*Moves the images to the top*/
+ position:relative;
+ top:-500px;
+}
+/*Centers the table by moving it right*/
+#centerRight
+{
+  position: relative;
+  right:-450px;
+}
+/*Here are the tags that I define*/
+left
+{
+  position:absolute;
+  left:-20px;
+ /*Moves it up for organization*/
+  up: 50px;
+}
+right
+{
+ position:absolute;
+ right:-120px;
+ /*Moves it up for organization*/
+ up:50px;
+}
+#right
+{
+ position:absolute;
+ right:-280px;
+}
+/*Does both what bigger class and the textRight class do*/
+#section
+{
+  /*Moves the text a little bit right*/
+  position:relative;
+  right:-20px;
+  /*Resizes the text*/
+  font-size:20px;
+}
+#long
+{
+width:1700px;
+/*To make sure the height doesn't get too big*/
+height:500px;
+}
+/*Makes sure the table is between the two picture columns*/
+#between
+{
+ position: relative;
+ right:-600px;
+}
+#tall
+{
+ height:1500px;
+ /*Makes sure the length doesn't get too big*/
+ width:300px;
+}
+#shrinkWidth
+{
+width:75%;
+/*Makes sure the height remains the same*/
+height:100%;
+}
+.border
+{ border-style:solid;}
+

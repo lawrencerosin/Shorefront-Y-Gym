@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Forgot Username</title>
+   <link rel="stylesheet" type="text/css" href="styles.css"/>
+ </head>
+ <body id="yellowBackground">
+    <form>
+	  <input type="email" id="email"><br/>
+	  <button type="button" onclick="AllowSecurityQuestionAnswers()">Continue</button>
+	</form>
+ </body>
+ </html>
+ 
