@@ -3,8 +3,7 @@ const times=["9A.M. to 10 A.M.", "10A.M.-11A.M.", "11:00A.M.-12P.M.", "12P.M.-1P
 var accountNumber=sessionStorage.getItem("account");
 var username=localStorage.getItem("username"+accountNumber);
 var classNumber=0;
-var classes=document.createElement("table");
-alert(localStorage.getItem(username+"ClassType1"));
+var classes=document.createElement("table"); 
 
 function GetCurrentClasses(){
     var title=document.createElement("h1");
